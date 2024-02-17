@@ -1,0 +1,281 @@
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+header {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#logo {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+#logo img {
+  height: 250px;
+  width: 250px;
+}
+
+#logo p {
+  color: #545be8;
+  font-weight: bold;
+  margin: 12px;
+}
+
+.flex-item {
+  width: 100%;
+  align-items: center;
+}
+
+#navbar nav {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  color: #101928;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#userButton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.transparentButton {
+  padding: 6px 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-color: #545be8;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #545be8;
+  border-width: 1px;
+  background-color: transparent;
+}
+
+.purpleButton {
+  padding: 6px 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #545be8;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  border: none;
+}
+
+#carousel {
+  background-color: #f5f5f5;
+  display: flex;
+  gap: 14px;
+}
+
+#titleDesc {
+  color: #545be8;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+#desc h1 {
+  width: 450px;
+  font-size: 48px;
+  color: #141e32;
+  font-size: bold;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+span {
+  color: #545be8;
+  font-weight: bold;
+}
+
+#aboutDesc {
+  color: #969696;
+  font-size: 16px;
+  width: 450px;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+button i {
+  color: #f0c932;
+  font-size: 48px;
+}
+
+.card {
+  margin-top: 10px;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #545be8;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  color: #f0c932;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  border-radius: 100%;
+  line-height: 1;
+}
+
+.cardHeader i {
+  text-align: center;
+}
+
+.cardBody {
+  padding: 20px;
+  flex: 1;
+}
+
+.cardBodyTitle {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.cardBodyDesc {
+  font-size: 14px;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+#selectedCourse {
+  background-image: linear-gradient(#545be8, #272db0);
+}
+
+#selectedCourse img {
+  width: 400px;
+  height: 400px;
+  margin: 24px;
+}
+
+#selectedCourse h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#selectedCourse #aboutDesc {
+  color: #ffffff;
+}
+
+#selectedCourse #titleDesc {
+  font-family: "Inter", sans-serif;
+  color: #f0c932;
+  text-transform: uppercase;
+}
+
+.flexNumber {
+  display: flex;
+  font-family: "inter", sans-serif;
+  gap: 32px;
+  margin: 0px;
+  text-align: center;
+}
+
+.flexNumber .number {
+  color: #f0c932;
+  font-weight: bold;
+  margin-bottom: 0px;
+  justify-content: space-between;
+}
+
+.flexNumber .text {
+  color: #ffffff;
+  margin: 2px 0px;
+}
+
+.imageCardGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi grid menjadi 2 kolom */
+  grid-template-rows: 1fr 1fr; /* Membagi grid menjadi 2 baris */
+  gap: 10px;
+}
+
+.imageCardGroup img {
+  width: 100%;
+}
+
+#testimonial h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  color: #0d1222;
+  margin: 0px;
+}
+
+.testimonialCard {
+  width: 50%;
+  height: fit-content;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.profilePicture img {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.testimonialHeader {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.fa-star {
+  color: #f1cc4a;
+}
+
+.profileDescription {
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.profileDescription p {
+  margin: 0px;
+}
