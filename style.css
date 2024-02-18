@@ -5,8 +5,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
-  margin: 20px 0px;
+  width: 95%;
   padding: 20px;
   border-radius: 5px;
 }
@@ -276,6 +275,53 @@ section {
   margin-left: 8px;
 }
 
+.icon-wrapper {
+  border: 1px solid #ffffff;
+  width: 24px;
+  text-align: center;
+  padding: 5px;
+}
+
 .profileDescription p {
   margin: 0px;
+}
+
+footer {
+  background-color: #393e46;
+  color: #f4f4f4;
+  justify-content: left;
+}
+
+#footerLogo {
+  display: flex;
+  gap: 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+#footerLogo img {
+  height: 24px;
+  width: 24px;
+}
+
+#footerLogo p {
+  margin: 5px 0;
+}
+
+#footerDesc {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: justify;
+  font-size: 14px;
+  width: 80%;
+}
+
+.footer-list {
+  margin: 0px 20px;
+  font-weight: normal;
+  width: max-content;
+}
+
+.footer-list h3 {
+  margin: 0;
+  font-weight: bold;
 }
