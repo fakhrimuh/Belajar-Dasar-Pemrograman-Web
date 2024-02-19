@@ -1,6 +1,9 @@
 <html>
   <head>
-    <title>mangcoding store</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./asset/Logo.png" type="image/x-icon" />
+    <title>mangcoding Store</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -60,7 +63,7 @@
               </button>
             </div>
           </div>
-          <div id="imageDescription">
+          <div class="imageDescription">
             <img src="./asset/first pic.png" alt="firstpic" srcset="" />
           </div>
         </div>
@@ -82,8 +85,8 @@
             </div>
           </aside>
 
-          <div id="imageDescription" class="flex-item">
-            <div class="flex">
+          <div class="imageDescription" class="flex-item">
+            <div class="flex getUSGroup">
               <!-- card 1 -->
               <div class="card flex-item">
                 <div class="cardHeader">
@@ -125,6 +128,20 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Card 4 -->
+              <div class="card flex-item">
+                <div class="cardHeader">
+                  <i class="fa fa-certificate"></i>
+                </div>
+                <div class="cardBody">
+                  <div class="cardBodyTitle">Interesting Testing</div>
+                  <div class="cardBodydesc">
+                    Dive into our courses and experience the excitement of
+                    interesting learning. Let's explore together
+                  </div>
+                </div>
+              </div>
             </div>
             <div id="arrowCardButton">
               <button>
@@ -140,7 +157,7 @@
 
       <section id="selectedCourse">
         <div class="flex container">
-          <div id="imageDescription">
+          <div class="imageDescription">
             <img src="./asset/second pic.png" alt="second pic" srcset="" />
           </div>
           <div id="descriptionText">
@@ -171,24 +188,95 @@
       </section>
 
       <!-- Available course -->
-      <section class="flex container">
+      <section class="flex container" id="availableCourse">
         <div class="imageCardGroup">
-          <img
-            src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="photography"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="design graphic"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Javascript"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="HTML & CSS"
-          />
+          <!-- HTML & CSS -->
+          <div class="cardImage">
+            <div class="imageContainer">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="imageCard"
+                alt="HTML & CSS"
+              />
+              <div class="label">Best Course</div>
+            </div>
+            <div class="imageCardDescription">
+              <div class="imageCardHeader">
+                <h3>HTML & CSS</h3>
+                <p>1,500 Views</p>
+              </div>
+              <div class="imageCardBody">
+                <p>120 Videos</p>
+                <p>2 Teacher</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photography -->
+          <div class="cardImage">
+            <div class="imageContainer">
+              <img
+                src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="photography"
+                class="imageCard"
+              />
+              <div class="label">Best Course</div>
+            </div>
+            <div class="imageCardDescription">
+              <div class="imageCardHeader">
+                <h3>Photographer</h3>
+                <p>1,500 Views</p>
+              </div>
+              <div class="imageCardBody">
+                <p>100 Videos</p>
+                <p>2 Teacher</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="cardImage">
+            <div class="imageContainer">
+              <img
+                src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="imageCard"
+                alt="Javascript"
+              />
+              <div class="label">Best Course</div>
+            </div>
+            <div class="imageCardDescription">
+              <div class="imageCardHeader">
+                <h3>JavaScript</h3>
+                <p>1,500 Views</p>
+              </div>
+              <div class="imageCardBody">
+                <p>120 Videos</p>
+                <p>2 Teacher</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desain Grafis -->
+          <div class="cardImage">
+            <div class="imageContainer">
+              <img
+                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="imageCard"
+                alt="design graphic"
+              />
+              <div class="label">Best Course</div>
+            </div>
+            <div class="imageCardDescription">
+              <div class="imageCardHeader">
+                <h3>Desain Grafis</h3>
+                <p>1,500 Views</p>
+              </div>
+              <div class="imageCardBody">
+                <p>100 Videos</p>
+                <p>2 Teacher</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Description -->
@@ -278,7 +366,7 @@
         <div>
           <div id="footerLogo">
             <img src="asset/Logo.png" alt="" srcset="" />
-            <p>Mangcoding Store</p>
+            <p>mangcoding Store</p>
           </div>
           <p id="FooterDesc">Explore, Learn, Grow - The Mangcoding Way</p>
           <div id="icon-list" class="flex" style="justify-content: left">
@@ -329,5 +417,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>
