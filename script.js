@@ -7,55 +7,51 @@ const cards = document.querySelectorAll(".card");
 let currentCardIndex = 0;
 const maxCardIndex = cards.length - 1;
 
-// Sembunyikan kartu ke-4 secara default
-cards[maxCardIndex].style.display = "none";
-
-// Fungsi untuk menampilkan kartu ke-4
-function showFourthCard() {
-  cards[maxCardIndex].style.display = "flex";
-}
-
-// Fungsi untuk menyembunyikan kartu ke-4
-function hideFourthCard() {
-  cards[maxCardIndex].style.display = "none";
-}
-
-// Fungsi untuk menampilkan kartu berikutnya
-function showNextCard() {
-  // Periksa apakah sedang di kartu terakhir
-  if (currentCardIndex === maxCardIndex) {
-    currentCardIndex = 0; // Kembali ke kartu pertama
-    hideFourthCard(); // Sembunyikan kartu ke-4
-  } else {
-    currentCardIndex++; // Tampilkan kartu berikutnya
-  }
-  updateCardDisplay(); // Update tampilan kartu
-}
-
-// Fungsi untuk menampilkan kartu sebelumnya
-function showPreviousCard() {
-  // Periksa apakah sedang di kartu pertama
-  if (currentCardIndex === 0) {
-    currentCardIndex = maxCardIndex; // Kembali ke kartu ke-4
-    showFourthCard(); // Tampilkan kartu ke-4
-  } else {
-    currentCardIndex--; // Tampilkan kartu sebelumnya
-  }
-  updateCardDisplay(); // Update tampilan kartu
-}
-
-// Fungsi untuk mengupdate tampilan kartu
-function updateCardDisplay() {
+// Fungsi untuk menampilkan kartu-kartu berikutnya
+function showNextCards() {
   // Semua kartu diatur untuk disembunyikan
   cards.forEach((card) => {
     card.style.display = "none";
   });
-  // Tampilkan kartu yang saat ini dipilih
-  cards[currentCardIndex].style.display = "flex";
+
+  // Tampilkan kartu-kartu berikutnya
+  for (let i = 0; i < 3; i++) {
+    const nextIndex = (currentCardIndex + i) % (maxCardIndex + 1);
+    cards[nextIndex].style.display = "flex";
+  }
+
+  // Perbarui indeks kartu
+  currentCardIndex = (currentCardIndex + 1) % (maxCardIndex + 1);
+}
+
+// Fungsi untuk menampilkan kartu-kartu sebelumnya
+function showPreviousCards() {
+  // Semua kartu diatur untuk disembunyikan
+  cards.forEach((card) => {
+    card.style.display = "none";
+  });
+
+  // Tampilkan kartu-kartu sebelumnya
+  for (let i = 0; i < 3; i++) {
+    let prevIndex = currentCardIndex - i;
+    if (prevIndex < 0) {
+      prevIndex = maxCardIndex + prevIndex + 1;
+    }
+    cards[prevIndex].style.display = "flex";
+  }
+
+  // Perbarui indeks kartu
+  currentCardIndex = currentCardIndex - 1;
+  if (currentCardIndex < 0) {
+    currentCardIndex = maxCardIndex;
+  }
 }
 
 // Tambahkan event listener pada tombol Next
-cardButtons[1].addEventListener("click", showNextCard);
+cardButtons[1].addEventListener("click", showNextCards);
 
 // Tambahkan event listener pada tombol Previous
-cardButtons[0].addEventListener("click", showPreviousCard);
+cardButtons[0].addEventListener("click", showPreviousCards);
+
+// Tampilkan kartu-kartu awal
+showNextCards();
