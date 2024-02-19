@@ -130,7 +130,7 @@ button i {
 }
 
 .card {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 250px;
   border-radius: 8px;
   overflow: hidden;
@@ -141,12 +141,12 @@ button i {
 }
 
 .cardHeader {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 28px;
   background-color: #ffffff;
   color: #f0c932;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
   margin-left: 10px;
   font-size: 20px;
@@ -156,6 +156,8 @@ button i {
 
 .cardHeader i {
   text-align: center;
+  align-content: center;
+  font-size: 24px;
 }
 
 .cardBody {
@@ -175,6 +177,24 @@ button i {
   font-size: 14px;
   color: #dddddd;
   margin-bottom: 10px;
+}
+
+#arrowCardButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#arrowCardButton button {
+  border-radius: 100%;
+  border: none;
+  background-color: #f1cc4a;
+  padding: 8px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#arrowCardButton i {
+  color: #ffffff;
 }
 
 section {
@@ -265,7 +285,7 @@ section {
   margin-bottom: 10px;
 }
 
-.fa-star {
+.testimonialRating i {
   color: #f1cc4a;
 }
 
