@@ -1,0 +1,1 @@
+File ini dibuat untuk menyelesaikan program belajar dasar pemrograman web dari dicoding, untuk link design didaptkan melalui communnity figma pada link berikut https://www.figma.com/community/file/1094150906284223275/course-simple-landing-page
